@@ -1,0 +1,294 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main{
+
+  font-size: 32px;
+  font-weight: lighter;
+
+}
+
+
+/*---------------------------------- css for flex ----------------------------------*/
+
+
+  .back{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery{
+
+    background-color: #8b8b8b;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+
+  }
+
+  .container1{
+
+    margin-left: 15%;
+    padding-top: 50px;
+
+  }
+
+  .box1 {
+
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 800px;
+    margin-left: -8px; 
+    max-width: 200px;
+    transition: .5s;
+    
+  }
+
+  .Allimgs {
+
+    margin: 0 8px 8px 0;
+    border-radius: 10px;
+  }
+
+  @media(max-width:1104px){
+    
+    .container1{
+      margin-left: 8%;
+    }
+
+
+  }
+
+  @media(max-width:1044px){
+    
+    .box1 {
+
+      display: flex;
+      flex-flow: column wrap;
+      max-height: 800px;
+      margin-left: -8px; 
+      max-width: 170px;
+      transition: .5s;
+
+    }
+
+
+  }
+
+  @media(max-width:670px){
+    
+    .box1 {
+
+      display: flex;
+      flex-flow: column wrap;
+      max-height: 800px;
+      margin-left: -8px; 
+      max-width: 150px;
+      transition: .5s;
+      
+
+    }
+
+
+  }
+
+  @media(max-width:600px){
+    
+    .box1 {
+
+      display: flex;
+      flex-flow: column wrap;
+      max-height: 800px;
+      margin-left: -8px; 
+      max-width: 110px;
+      transition: .5s;
+
+    }
+
+
+  }
+
+  @media(max-width:500px){
+    
+    .box1 {
+
+      display: block;
+      max-width: 400px;
+      transition: .5s;
+
+    }
+
+    .container1{
+      margin-left: 11%;
+      padding-top: 50px;
+    }
+
+  }
+/*---------------------------------- fin ----------------------------------*/
+
+/*---------------------------------- css for float ------------------------*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.parent, .parent2, .parent3, .parent4, .parent5, .parent6{
+  float: left;
+}  
+
+
+.children {
+
+  margin: 8px;
+  width: 200px;
+  max-width: 190px;
+  transition: .5s;
+
+}
+
+.boxified {
+ 
+  margin: auto;
+  padding-left: 130px;
+}
+
+/*---------------------------------- fin ----------------------------------*/
+
+/*---------------------------------- css for table ------------------------*/
+
+.table {
+
+  display: table;
+  table-layout: auto;
+}
+
+.tr {
+
+  display: table-row-group;
+
+}
+
+.td {
+
+  display: table-cell;
+  
+}
+
+/*---------------------------------- fin ----------------------------------*/
+
+/*---------------------------------- css for Grid ------------------------*/
+
+.holder {
+
+  transition: .5s;
+  margin: auto;
+  padding-left: 30px;
+  
+}
+
+.subholder {
+  margin-top: 20px;
+  
+  columns: 4;
+  column-gap: 1px;
+  transition: .5s;
+  
+}
+
+.pics {
+  
+  border-radius: 15px;
+  width: 350px;
+  margin-bottom: 20px;
+  transition: .5s;
+  
+}
+
+
+@media(max-width:1104px){
+    
+  .subholder {
+    margin-top: 20px;
+  
+    columns: 4;
+    column-gap: 1px;
+  
+  }
+  
+}
+
+@media(max-width:1044px){
+  
+  .subholder {
+    margin-top: 20px;
+  
+    columns: 3;
+    column-gap: 1px;
+  
+  }
+
+}
+
+@media(max-width:670px){
+
+  .subholder {
+    margin-top: 20px;
+  
+    columns: 2;
+    column-gap: 1px;
+  
+  }
+}
+
+@media(max-width:600px){
+  
+  .subholder {
+    margin: auto;
+    display: block;
+    columns: 1;
+  
+  }
+
+  .holder{
+
+    margin-left: 50px;
+    
+  }
+
+}
+
+/*---------------------------------- fin ----------------------------------*/
+
+.ball {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: red;
+  position: relative;
+}
